@@ -9,4 +9,8 @@ end
 
 # call your method here!
 
-hello_t(['tom', "tim", "jim"])
+hello_t(['tom', "tim", "jim"]) do |name|
+  if name.starts_with?("T")
+    puts "Hi, #{name}"
+  end
+end
